@@ -15,33 +15,34 @@
         <link rel="canonical" href="https://datadoghq.dev/datadog-agent/how-to/test/e2e/">
       
       
+      
         <link rel="prev" href="../static-analysis/">
       
       
-        <link rel="next" href="../manual-qa/">
+        <link rel="next" href="./running/">
       
       
         
       
       
       <link rel="icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="zensical-0.0.53">
+      <meta name="generator" content="zensical-0.0.71">
     
     
       
-        <title>Running E2E tests - Datadog Agent</title>
+        <title>End-to-end tests - Datadog Agent</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../../assets/stylesheets/classic/main.39e53929.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/classic/main.68ef4dbf.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/classic/palette.7dc9a0ad.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/classic/palette.813d4b3f.min.css">
       
       
 
@@ -85,14 +86,11 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#running-e2e-tests" class="md-skip">
-          Skip to content
-        </a>
-      
+      <a href="#__skip" class="md-skip">
+        Skip to content
+      </a>
     </div>
     <div data-md-component="announce">
       
@@ -124,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Running E2E tests
+              End-to-end tests
             
           </span>
         </div>
@@ -246,6 +244,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -293,6 +297,8 @@
       
         
       
+        
+      
     
     
     
@@ -314,7 +320,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../tutorials/dev/env/" class="md-tabs__link">
+        <a href="../../../tutorials/components/creating-components/" class="md-tabs__link">
           
   
   Tutorials
@@ -335,6 +341,8 @@
   
     
       
+      
+        
       
         
       
@@ -376,65 +384,7 @@
       
         
       
-    
-    
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../components/overview/" class="md-tabs__link">
-          
-  
-  Components
-
-        </a>
-      </li>
-    
-  
-
-      
         
-  
-  
-  
-  
-    
-      
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../agent-schema/" class="md-tabs__link">
-          
-  
-  Agent Schema
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-      
       
         
       
@@ -457,54 +407,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../architecture/dogstatsd/internals/" class="md-tabs__link">
-          
-  
-  Architecture
-
-        </a>
-      </li>
-    
-  
-
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-      
-      
-        
-      
-        
-      
-    
-    
-    
-    
-      
-  
-  
-  
-  
-    
-      
-      
-        
-      
-        
-      
-    
-    
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../reference/images/dev/" class="md-tabs__link">
+        <a href="../../../reference/components/status/" class="md-tabs__link">
           
   
   Reference
@@ -515,6 +418,22 @@
   
 
     
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../architecture/" class="md-tabs__link">
+        
+  
+  Architecture
+
+      </a>
+    </li>
   
 
       
@@ -625,20 +544,21 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Home
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -687,18 +607,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_1_2">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Setup
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -722,10 +643,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -749,10 +670,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -776,18 +697,20 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -803,6 +726,12 @@
   
     
     
+      
+        
+      
+        
+      
+        
       
         
       
@@ -850,18 +779,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   How-to
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -911,18 +841,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_1">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_1">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Build
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -946,10 +877,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -973,18 +904,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
     
@@ -1038,18 +970,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_2_2">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Test
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1073,10 +1006,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1100,28 +1033,50 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
     
   
   
   
-    <li class="md-nav__item md-nav__item--active">
+    
+    
       
+        
+          
+        
       
-        <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+        
       
+        
+      
+        
+      
+        
+      
+    
+    
+    
       
       
         
       
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" checked>
+        
           
+          <div class="md-nav__link md-nav__container">
+            <a href="././" class="md-nav__link md-nav__link--active">
+              
   
   
   <span class="md-ellipsis">
@@ -1134,17 +1089,43 @@
   
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_2_2_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  End-to-end tests
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./running/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  End-to-end tests
+  Running tests
 
     
   </span>
@@ -1152,317 +1133,103 @@
   
 
       </a>
-      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./writing/" class="md-nav__link">
         
-
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
-  
+  <span class="md-ellipsis">
     
   
+  Writing tests
+
+    
+  </span>
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Prerequisites
-      </span>
-    </span>
-  </a>
   
-    <nav class="md-nav" aria-label="Prerequisites">
-      <ul class="md-nav__list">
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./dependencies/" class="md-nav__link">
         
-          <li class="md-nav__item">
-  <a href="#software-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Software Requirements
-      </span>
-    </span>
-  </a>
   
-</li>
+  
+  <span class="md-ellipsis">
+    
+  
+  Test dependencies
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./custom-amis/" class="md-nav__link">
         
-          <li class="md-nav__item">
-  <a href="#cloud-provider-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Cloud Provider Setup
-      </span>
-    </span>
-  </a>
   
-</li>
+  
+  <span class="md-ellipsis">
+    
+  
+  Custom AMIs
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
         
-          <li class="md-nav__item">
-  <a href="#one-time-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        One-time setup
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#running-e2e-tests_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Running E2E Tests
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Running E2E Tests">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-test-execution" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Basic Test Execution
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-with-local-agent-packages" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Test with Local Agent Packages
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-with-local-agent-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Test with Local Agent Image
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#test-framework-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Test Framework Usage
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Test Framework Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#environment-provisioning" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Environment Provisioning
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#available-provisioners" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Available Provisioners
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Test Validation
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#test-categories-and-scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Test Categories and Scenarios
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Test Categories and Scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installation-and-deployment-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Installation and Deployment Tests
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upgrade-and-migration-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Upgrade and Migration Tests
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#platform-integration-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Platform Integration Tests
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#performance-and-scale-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Performance and Scale Tests
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-and-compliance-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Security and Compliance Tests
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Best Practices
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Best Practices">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#test-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Test Design
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#performance-considerations" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Performance Considerations
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#maintenance" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Maintenance
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        See Also
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1522,20 +1289,21 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2_4">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_2_4">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Manual QA
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -1588,18 +1356,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2_4_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_4_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_2_4_2">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   AWS
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1623,10 +1392,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1650,10 +1419,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1677,10 +1446,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1704,10 +1473,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1731,18 +1500,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1787,18 +1557,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2_4_3">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_4_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_2_4_3">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Azure
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1822,18 +1593,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1878,18 +1650,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_4_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2_4_4">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_4_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_2_4_4">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   GCP
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1913,34 +1686,37 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1988,18 +1764,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_3">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Go
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2023,18 +1800,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2043,7 +1821,9 @@
     
       
         
-          
+      
+        
+      
         
       
         
@@ -2071,57 +1851,49 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
         
           
-          <div class="md-nav__link md-nav__container">
-            <a href="../../debug-agents/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
   
   
   <span class="md-ellipsis">
     
   
-  Debug agents
+  Component framework
 
     
   </span>
   
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-  Debug agents
-
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_4">
+              <span class="md-nav__icon md-icon"></span>
               
-            
+  
+  Component framework
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../debug-agents/linux/" class="md-nav__link">
+      <a href="../../components/using-components/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Linux
+  Use components in binaries
 
     
   </span>
@@ -2132,23 +1904,23 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../debug-agents/windows/" class="md-nav__link">
+      <a href="../../components/creating-bundles/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Windows
+  Create bundles
 
     
   </span>
@@ -2159,28 +1931,106 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/optional-dependencies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Use optional dependencies
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/flares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Add flare data
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../components/status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Add a status provider
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
   
     
     
-      
-        
-      
-        
       
         
       
@@ -2214,6 +2064,369 @@
   <span class="md-ellipsis">
     
   
+  Agent schema
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_5">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Agent schema
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent-schema/settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Add and document settings
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent-schema/workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Validate and generate output
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Checks
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Checks
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../run-jmxfetch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Run JMXFetch
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../debug-agents/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Debug agents
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_7">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Debug agents
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../debug-agents/linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Linux
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../debug-agents/windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Windows
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
   Memory profiling
 
     
@@ -2224,18 +2437,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_5">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_2_8">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Memory profiling
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2259,10 +2473,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2286,10 +2500,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2313,10 +2527,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2340,18 +2554,20 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2365,6 +2581,8 @@
   
     
     
+      
+        
       
         
       
@@ -2403,18 +2621,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tutorials
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2451,6 +2670,128 @@
   <span class="md-ellipsis">
     
   
+  Component framework
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3_1">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Component framework
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/components/creating-components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Create a component
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/components/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Test a component
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
   Develop
 
     
@@ -2461,18 +2802,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3_2">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Develop
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2496,10 +2838,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2528,7 +2870,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2_2" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -2549,26 +2891,27 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3_2_2">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Lab environments
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+              
+                
+                  
   
   
   
@@ -2592,26 +2935,29 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2625,6 +2971,8 @@
   
     
     
+      
+        
       
         
       
@@ -2671,18 +3019,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Guidelines
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2706,10 +3055,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2733,81 +3082,23 @@
     </li>
   
 
-              
-            
+                
               
                 
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Languages
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  Languages
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/languages/go/" class="md-nav__link">
+      <a href="../../../guidelines/components/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Go
+  Component framework
 
     
   </span>
@@ -2818,51 +3109,18 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../guidelines/languages/RUST/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
     
-  
-  Rust
-
     
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
+        
       
         
       
@@ -2891,7 +3149,7 @@
   <span class="md-ellipsis">
     
   
-  Testing
+  Languages
 
     
   </span>
@@ -2901,31 +3159,32 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_4">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_4">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-  Testing
+  Languages
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/testing/test-categories/" class="md-nav__link">
+      <a href="../../../guidelines/languages/go/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Test categories
+  Go
 
     
   </span>
@@ -2936,18 +3195,46 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidelines/languages/RUST/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Rust
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2982,6 +3269,99 @@
   <span class="md-ellipsis">
     
   
+  Testing
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_5">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Testing
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidelines/testing/test-categories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Test categories
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
   Conventions
 
     
@@ -2992,18 +3372,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_5">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_4_6">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Conventions
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -3027,18 +3408,20 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3052,6 +3435,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -3084,7 +3471,7 @@
   <span class="md-ellipsis">
     
   
-  Components
+  Reference
 
     
   </span>
@@ -3094,31 +3481,89 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-  Components
+  Reference
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Component framework
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5_1">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Component framework
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../../components/overview/" class="md-nav__link">
+      <a href="../../../reference/components/status/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Overview
+  Status providers
 
     
   </span>
@@ -3129,18 +3574,25 @@
     </li>
   
 
+                
               
-            
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
               
                 
+                  
   
   
   
   
     
     
-      
-        
       
         
       
@@ -3171,7 +3623,7 @@
   <span class="md-ellipsis">
     
   
-  Components
+  Agent schema
 
     
   </span>
@@ -3181,31 +3633,32 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5_2">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-  Components
+  Agent schema
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../../components/creating-components/" class="md-nav__link">
+      <a href="../../../reference/agent-schema/keywords/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Creating components
+  Keywords
 
     
   </span>
@@ -3216,23 +3669,23 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../../components/testing/" class="md-nav__link">
+      <a href="../../../reference/agent-schema/cli/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Testing components
+  CLI commands
 
     
   </span>
@@ -3243,51 +3696,27 @@
     </li>
   
 
-              
-            
-              
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../components/using-components/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Using components
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
   
     
     
+      
+        
       
         
       
@@ -3316,601 +3745,6 @@
   <span class="md-ellipsis">
     
   
-  Shared features from components
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  Shared features from components
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_3_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_5_3_1" id="__nav_5_3_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Features
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_3_1">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  Features
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../components/shared_features/flares/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Flare
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../components/shared_features/status/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Status
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../../agent-schema/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Agent Schema
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  Agent Schema
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agent-schema/keywords/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Keyword Reference
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agent-schema/examples/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Examples
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agent-schema/cli/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  CLI Commands
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../agent-schema/faq/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  FAQ
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Architecture
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  Architecture
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  DogStatsD
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_1">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  DogStatsD
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../architecture/dogstatsd/internals/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Internals
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Reference
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  Reference
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
   Images
 
     
@@ -3921,18 +3755,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_1">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5_3">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Images
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -3956,10 +3791,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -3983,18 +3818,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -4019,10 +3855,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_4" >
         
           
-          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
             
   
   
@@ -4039,18 +3875,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_2">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5_4">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Agent buildables
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -4074,19 +3911,74 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Developer docs
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Architecture
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -4120,6 +4012,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#in-this-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        In this section
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -4143,10 +4046,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cloud-provider-setup" class="md-nav__link">
+  <a href="#cloud-provider-access" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Cloud Provider Setup
+        Cloud Provider Access
       </span>
     </span>
   </a>
@@ -4164,222 +4067,11 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#running-e2e-tests_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Running E2E Tests
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Running E2E Tests">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
-  <a href="#basic-test-execution" class="md-nav__link">
+  <a href="#workspace-support" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Basic Test Execution
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-with-local-agent-packages" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Test with Local Agent Packages
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-with-local-agent-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Test with Local Agent Image
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#test-framework-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Test Framework Usage
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Test Framework Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#environment-provisioning" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Environment Provisioning
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#available-provisioners" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Available Provisioners
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Test Validation
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#test-categories-and-scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Test Categories and Scenarios
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Test Categories and Scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installation-and-deployment-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Installation and Deployment Tests
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upgrade-and-migration-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Upgrade and Migration Tests
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#platform-integration-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Platform Integration Tests
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#performance-and-scale-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Performance and Scale Tests
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-and-compliance-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Security and Compliance Tests
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Best Practices
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Best Practices">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#test-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Test Design
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#performance-considerations" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Performance Considerations
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#maintenance" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Maintenance
+        Workspace support
       </span>
     </span>
   </a>
@@ -4414,10 +4106,14 @@
             <div class="md-content" data-md-component="content">
               
               <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
                 
-                  
   
-    <a href="https://github.com/DataDog/datadog-agent/blob/main/docs/public/how-to/test/e2e.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+  
+                  
+
+  
+    <a href="https://github.com/DataDog/datadog-agent/blob/main/doc/how-to/test/e2e/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -4425,209 +4121,72 @@
   
 
 
-<h1 id="running-e2e-tests">Running E2E tests<a class="headerlink" href="#running-e2e-tests" title="Permanent link">&para;</a></h1>
-<p>End-to-End (E2E) tests validate complete user workflows in production-like environments with real infrastructure and external services. The Datadog Agent uses the <a href="https://github.com/DataDog/datadog-agent/tree/main/test/e2e-framework">test-infra-definitions</a> framework to provision and manage test environments. Tests are stored in the <a href="https://github.com/DataDog/datadog-agent/tree/main/test/new-e2e">test/new-e2e</a> folder.</p>
+<h1 id="end-to-end-tests">End-to-end tests<a class="headerlink" href="#end-to-end-tests" title="Permanent link">&para;</a></h1>
+<p>End-to-End (E2E) tests validate complete user workflows in production-like environments with real infrastructure and external services. The Datadog Agent uses the <a href="https://github.com/DataDog/datadog-agent/tree/main/test/e2e-framework">E2E framework</a> in <code>test/e2e-framework</code> (formerly the separate <code>test-infra-definitions</code> repository) to provision and manage test environments. Tests are stored in the <a href="https://github.com/DataDog/datadog-agent/tree/main/test/new-e2e">test/new-e2e</a> folder.</p>
+<h2 id="in-this-section">In this section<a class="headerlink" href="#in-this-section" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="running/">Running tests</a> — execute an existing suite, iterate with dev mode, test a locally-built Agent</li>
+<li><a href="writing/">Writing tests</a> — provisioners, environments, and assertions</li>
+<li><a href="dependencies/">Test dependencies</a> — how to get a tool, image, or artifact onto a test host without reaching the public internet</li>
+<li><a href="custom-amis/">Custom AMIs</a> — how machine images are selected, and how to add, bump or pin one</li>
+</ul>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Datadog Employees Only</p>
-<p>E2E testing requires access to Datadog's internal cloud infrastructure and is currently limited to Datadog employees. This limitation is temporary and may be expanded in the future.</p>
+<p>E2E testing requires access to Datadog's internal cloud infrastructure and is currently limited to Datadog employees.</p>
 </div>
 <h3 id="software-requirements">Software Requirements<a class="headerlink" href="#software-requirements" title="Permanent link">&para;</a></h3>
-<p>Before running E2E tests, ensure you have the following installed:</p>
+<p>The simplest path is to run E2E tests from a <a href="../../../tutorials/dev/env/">developer environment</a> — it already has everything below installed.</p>
+<details class="info">
+<summary>Setting up outside a developer environment</summary>
 <ul>
 <li><strong>Go 1.22 or later</strong></li>
 <li><strong>Python 3.9+</strong></li>
 <li><strong>dda tooling</strong> - Install by following the <a href="../../../setup/required/">development requirements</a></li>
 </ul>
-<h3 id="cloud-provider-setup">Cloud Provider Setup<a class="headerlink" href="#cloud-provider-setup" title="Permanent link">&para;</a></h3>
-<p>You need access to the <code>account-admin-8h</code> role on the <code>agent-sandbox</code> AWS account, with the SSO profile (<code>sso-agent-sandbox-account-admin-8h</code>) already in your <code>~/.aws/config</code> and an active aws-vault session. AWS authentication is handled outside of <code>e2e.setup</code> — typically by your org's onboarding tooling, or manually with <code>aws-vault login</code>.</p>
+</details>
+<h3 id="cloud-provider-access">Cloud Provider Access<a class="headerlink" href="#cloud-provider-access" title="Permanent link">&para;</a></h3>
+<p>You need access to the <code>account-admin-8h</code> role on the <code>agent-sandbox</code> AWS account. If <code>dda inv e2e.setup</code> (below) reports it can't reach that account, you don't have access yet — ask #agent-devx-help for it; the request process is documented internally on Confluence.</p>
 <p>For Azure / GCP tests, pass <code>--with-azure</code> / <code>--with-gcp</code> when running the setup task (see below).</p>
 <h3 id="one-time-setup">One-time setup<a class="headerlink" href="#one-time-setup" title="Permanent link">&para;</a></h3>
-<p>Run the setup task once on a fresh machine. The default path is AWS-only and asks at most one question (your GitHub team, used to tag resources). It auto-creates the EC2 keypair (using your existing aws-vault session) and generates a Pulumi passphrase.</p>
+<p>Run the setup task once on a fresh machine:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>dda<span class="w"> </span>inv<span class="w"> </span>e2e.setup
 </span></code></pre></div>
-<p>For Azure or GCP support:</p>
+<p>On the default (AWS-only) path, it:</p>
+<ul>
+<li>Checks for the AWS CLI, installing/updating Pulumi if needed, and configures a local Pulumi backend (<code>pulumi login --local</code>).</li>
+<li>Adds the <code>agent-sandbox</code> SSO profile to <code>~/.aws/config</code> if it isn't there yet, and creates an EC2 keypair via <code>aws-vault</code> (which may prompt you to authenticate).</li>
+<li>Asks one question — your GitHub team, used to tag AWS resources for cost attribution — and generates a Pulumi passphrase.</li>
+</ul>
+<p>For Azure or GCP support (each requires that provider's CLI — <code>az</code> / <code>gcloud</code> — already installed):</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>dda<span class="w"> </span>inv<span class="w"> </span>e2e.setup<span class="w"> </span>--with-azure<span class="w"> </span>--with-gcp
 </span></code></pre></div>
 <p>The configuration is persisted to <code>~/.test_infra_config.yaml</code> (chmod <code>0600</code>, since it contains the auto-generated Pulumi passphrase). Re-running <code>dda inv e2e.setup</code> is idempotent — it prints <code>✓ already configured</code> checks and exits.</p>
-<h2 id="running-e2e-tests_1">Running E2E Tests<a class="headerlink" href="#running-e2e-tests_1" title="Permanent link">&para;</a></h2>
-<h3 id="basic-test-execution">Basic Test Execution<a class="headerlink" href="#basic-test-execution" title="Permanent link">&para;</a></h3>
-<p>E2E tests are located in the <code>test/new-e2e/</code> directory. After running <code>dda inv e2e.setup</code> once, you can run them like unit tests — no <code>aws-vault exec</code> wrapping, no exported <code>PULUMI_CONFIG_PASSPHRASE</code>. The runner reads the passphrase from your local config and auto-wraps the test command with <code>aws-vault exec</code> against the configured profile.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Run a simple VM test</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>dda<span class="w"> </span>inv<span class="w"> </span>new-e2e-tests.run<span class="w"> </span>--targets<span class="o">=</span>./examples<span class="w"> </span>--run<span class="o">=</span>^TestVMSuite$
-</span></code></pre></div>
-<p>If you manage AWS credentials yourself (e.g. via SAML2AWS or another tool), pass <code>--no-aws-vault</code> to skip the auto-wrap.</p>
-<p>Replace ./examples with your subfolder.
-This also supports the golang testing flag --run and --skip to target specific tests using go test syntax. See go help testflag for details.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>inv<span class="w"> </span>new-e2e-tests.run<span class="w"> </span>--targets<span class="o">=</span>./examples<span class="w"> </span>--run<span class="o">=</span>TestMyLocalKindSuite/TestClusterAgentInstalled
-</span></code></pre></div>
-<p>You can also run it with go test, from test/new-e2e
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">cd</span><span class="w"> </span>test/new-e2e<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>go<span class="w"> </span><span class="nb">test</span><span class="w"> </span>./examples<span class="w"> </span>-timeout<span class="w"> </span><span class="m">0</span><span class="w"> </span>-run<span class="o">=</span>^TestVMSuite$
-</span></code></pre></div></p>
-<p>While developing a test you might want to keep the remote instance alive to iterate faster. You can skip the resources deletion using dev mode with the environment variable <code>E2E_DEV_MODE</code>. You can force this in the terminal
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">E2E_DEV_MODE</span><span class="o">=</span><span class="nb">true</span><span class="w"> </span>inv<span class="w"> </span>-e<span class="w"> </span>new-e2e-tests.run<span class="w"> </span>--targets<span class="w"> </span>./examples<span class="w"> </span>--run<span class="o">=</span>^TestVMSuite$
-</span></code></pre></div>
-or for instance add it in the <code>go.testEnvVars</code> if you are using a VSCode-based IDE
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>&quot;go.testEnvVars&quot;: {
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  &quot;E2E_DEV_MODE&quot;: &quot;true&quot;,
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>}, 
-</span></code></pre></div></p>
-<h3 id="test-with-local-agent-packages">Test with Local Agent Packages<a class="headerlink" href="#test-with-local-agent-packages" title="Permanent link">&para;</a></h3>
-<div class="admonition">
-<p class="admonition-title">Limitations</p>
-<p>type: warning</p>
-<p>Local packaging is curently limited to DEB packages, only for Linux and Macos computers.
-This method relies on updating an existing agent package with the local Go binaries. As a consequence, this is incompatible with tests related to the agent packaging or the python integration.</p>
+<h3 id="workspace-support">Workspace support<a class="headerlink" href="#workspace-support" title="Permanent link">&para;</a></h3>
+<p>The e2e test framework tooling supports being run from Datadog workspaces just like developer laptops. </p>
+<div class="admonition warning">
+<p class="admonition-title">Workspace compatibility of the e2e tooling</p>
+<ul>
+<li><strong>The workspace must be in the <code>us-east-1</code> region</strong>. The VPN bridging the AWS account holding the workspace machines and the <code>datadog-agent-qa</code> account actually running the tests only exists in <code>us-east-1</code>.</li>
+<li><strong>You must use <code>zsh</code> in the workspace</strong>. The <code>fish</code>-based workspace config lacks some setup that is required for the e2e tooling.</li>
+</ul>
 </div>
-<p>From a developer environment (see <a href="../../../tutorials/dev/env/">Using developer environments</a>), you can create the agent package with your local code using:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>dda<span class="w"> </span>inv<span class="w"> </span>omnibus.build-repackaged-agent
-</span></code></pre></div></p>
-<p>You can then execute your E2E tests with the associated command:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Run tests with a specific agent version</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>dda<span class="w"> </span>inv<span class="w"> </span>new-e2e-tests.run<span class="w"> </span>--targets<span class="w"> </span>./examples<span class="w"> </span>--run<span class="w"> </span>TestVMSuiteEx5<span class="w"> </span>--local-package<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/omnibus
-</span></code></pre></div></p>
-<p>Make sure to replace <code>examples</code> with the package you want to test and to target the test you want to run with <code>--run</code>.</p>
-<h3 id="test-with-local-agent-image">Test with Local Agent Image<a class="headerlink" href="#test-with-local-agent-image" title="Permanent link">&para;</a></h3>
-<div class="admonition">
-<p class="admonition-title">Limitations</p>
-<p>type: warning</p>
-<p>This method relies on updating an existing Agent image with the local Go binaries. It only works for Docker images and must be considered as a solution for testing only.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>The <code>e2e.*</code> Invoke tasks will <strong>NOT WORK</strong> in a workspace provisioned in <code>eu-west-3</code>.</p>
 </div>
-<p>Build the Agent binary and the Docker image, using this command:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>dda<span class="w"> </span>inv<span class="w"> </span><span class="o">[</span>--core-opts<span class="o">]</span><span class="w"> </span>agent.hacky-dev-image-build<span class="w"> </span><span class="o">[</span>--base-image<span class="o">=</span>STRING<span class="w"> </span>--push<span class="w"> </span>--signed-pull<span class="w"> </span>--target-image<span class="o">=</span>STRING<span class="o">]</span>
-</span></code></pre></div></p>
-<p>The command uses <code>dda inv agent.build</code> to generate the Go binaries. The generated image embeds this binary, a debugger and auto-completion for the agent commands.
-By default, the image is names <code>agent</code> unless you override it with the <code>--target-image</code> option.</p>
-<p>Then push the image to a registry:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Login to ECR</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>aws-vault<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>sso-agent-sandbox-account-admin-8h<span class="w"> </span>--<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>aws<span class="w"> </span>ecr<span class="w"> </span>get-login-password<span class="w"> </span>--region<span class="w"> </span>us-east-1<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>docker<span class="w"> </span>login<span class="w"> </span>--username<span class="w"> </span>AWS<span class="w"> </span>--password-stdin<span class="w"> </span><span class="m">376334461865</span>.dkr.ecr.us-east-1.amazonaws.com
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1"># Push the image</span>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>docker<span class="w"> </span>push<span class="w"> </span><span class="m">376334461865</span>.dkr.ecr.us-east-1.amazonaws.com/agent-e2e-tests:<span class="nv">$USER</span>
-</span></code></pre></div></p>
-<p>And finally, execute your E2E tests with the associated command:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Run Ubuntu tests</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>inv<span class="w"> </span>-e<span class="w"> </span>new-e2e-tests.run<span class="w"> </span>--targets<span class="w"> </span>./tests/containers<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span>--run<span class="w"> </span>TestDockerSuite/TestDSDWithUDP<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">  </span>--agent-image<span class="w"> </span><span class="m">376334461865</span>.dkr.ecr.us-east-1.amazonaws.com/agent-e2e-tests:<span class="nv">$USER</span>
-</span></code></pre></div></p>
-<h2 id="test-framework-usage">Test Framework Usage<a class="headerlink" href="#test-framework-usage" title="Permanent link">&para;</a></h2>
-<h3 id="environment-provisioning">Environment Provisioning<a class="headerlink" href="#environment-provisioning" title="Permanent link">&para;</a></h3>
-<p>E2E tests use Pulumi-based provisioning to create real infrastructure:</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">package</span><span class="w"> </span><span class="nx">examples</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="s">&quot;testing&quot;</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="s">&quot;github.com/DataDog/datadog-agent/test/e2e-framework/testing/e2e&quot;</span>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span><span class="s">&quot;github.com/DataDog/datadog-agent/test/e2e-framework/testing/environments&quot;</span>
-</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">    </span><span class="nx">awshost</span><span class="w"> </span><span class="s">&quot;github.com/DataDog/datadog-agent/test/e2e-framework/testing/provisioners/aws/host&quot;</span>
-</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="p">)</span>
-</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>
-</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="kd">type</span><span class="w"> </span><span class="nx">vmSuite</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="w">    </span><span class="nx">e2e</span><span class="p">.</span><span class="nx">BaseSuite</span><span class="p">[</span><span class="nx">environments</span><span class="p">.</span><span class="nx">Host</span><span class="p">]</span>
-</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="p">}</span>
-</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>
-</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="kd">func</span><span class="w"> </span><span class="nx">TestVMSuite</span><span class="p">(</span><span class="nx">t</span><span class="w"> </span><span class="o">*</span><span class="nx">testing</span><span class="p">.</span><span class="nx">T</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">    </span><span class="nx">suiteParams</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="p">[]</span><span class="nx">e2e</span><span class="p">.</span><span class="nx">SuiteOption</span><span class="p">{</span>
-</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">        </span><span class="nx">e2e</span><span class="p">.</span><span class="nx">WithProvisioner</span><span class="p">(</span><span class="nx">awshost</span><span class="p">.</span><span class="nx">ProvisionerNoAgentNoFakeIntake</span><span class="p">()),</span>
-</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>
-</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="w">    </span><span class="nx">e2e</span><span class="p">.</span><span class="nx">Run</span><span class="p">(</span><span class="nx">t</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">vmSuite</span><span class="p">{},</span><span class="w"> </span><span class="nx">suiteParams</span><span class="o">...</span><span class="p">)</span>
-</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="available-provisioners">Available Provisioners<a class="headerlink" href="#available-provisioners" title="Permanent link">&para;</a></h3>
-<p>The framework provides several provisioners for different scenarios:</p>
 <ul>
-<li><strong>AWS Host</strong>: <code>awshost.Provisioner*()</code> - Provision EC2 instances</li>
-<li><strong>Kubernetes</strong>: <code>eks.Provisioner*()</code> - Provision EKS clusters</li>
-<li><strong>Docker</strong>: Container-based provisioning</li>
-<li><strong>Multi-platform</strong>: Cross-platform test scenarios</li>
-</ul>
-<h3 id="test-validation">Test Validation<a class="headerlink" href="#test-validation" title="Permanent link">&para;</a></h3>
-<p>E2E tests should validate complete workflows:</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">v</span><span class="w"> </span><span class="o">*</span><span class="nx">vmSuite</span><span class="p">)</span><span class="w"> </span><span class="nx">TestAgentInstallation</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="nx">vm</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">v</span><span class="p">.</span><span class="nx">Env</span><span class="p">().</span><span class="nx">RemoteHost</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="c1">// Install agent</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">    </span><span class="nx">_</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">vm</span><span class="p">.</span><span class="nx">Execute</span><span class="p">(</span><span class="s">&quot;sudo apt-get install datadog-agent&quot;</span><span class="p">)</span>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="nx">v</span><span class="p">.</span><span class="nx">Require</span><span class="p">().</span><span class="nx">NoError</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">    </span><span class="c1">// Verify agent is running</span>
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">    </span><span class="nx">out</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">vm</span><span class="p">.</span><span class="nx">Execute</span><span class="p">(</span><span class="s">&quot;sudo systemctl status datadog-agent&quot;</span><span class="p">)</span>
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">    </span><span class="nx">v</span><span class="p">.</span><span class="nx">Require</span><span class="p">().</span><span class="nx">NoError</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">    </span><span class="nx">v</span><span class="p">.</span><span class="nx">Require</span><span class="p">().</span><span class="nx">Contains</span><span class="p">(</span><span class="nx">out</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;active (running)&quot;</span><span class="p">)</span>
-</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>
-</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w">    </span><span class="c1">// Validate metric submission</span>
-</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">    </span><span class="nx">v</span><span class="p">.</span><span class="nx">Eventually</span><span class="p">(</span><span class="kd">func</span><span class="p">()</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">v</span><span class="p">.</span><span class="nx">Env</span><span class="p">().</span><span class="nx">FakeIntake</span><span class="p">.</span><span class="nx">GetMetricCount</span><span class="p">()</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="mi">0</span>
-</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mi">30</span><span class="o">*</span><span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">*</span><span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="p">)</span>
-</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="test-categories-and-scenarios">Test Categories and Scenarios<a class="headerlink" href="#test-categories-and-scenarios" title="Permanent link">&para;</a></h2>
-<h3 id="installation-and-deployment-tests">Installation and Deployment Tests<a class="headerlink" href="#installation-and-deployment-tests" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Fresh installation on clean systems</li>
-<li>Package manager installations (APT, YUM, MSI)</li>
-<li>Container deployment validation</li>
-<li>Kubernetes operator deployment</li>
-</ul>
-<h3 id="upgrade-and-migration-tests">Upgrade and Migration Tests<a class="headerlink" href="#upgrade-and-migration-tests" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Agent version upgrades</li>
-<li>Configuration migration</li>
-<li>Rollback scenarios</li>
-<li>Zero-downtime upgrades</li>
-</ul>
-<h3 id="platform-integration-tests">Platform Integration Tests<a class="headerlink" href="#platform-integration-tests" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Cloud provider integrations (AWS, Azure, GCP)</li>
-<li>Container runtime compatibility (Docker, containerd, CRI-O)</li>
-<li>Kubernetes version compatibility</li>
-<li>Operating system support validation</li>
-</ul>
-<h3 id="performance-and-scale-tests">Performance and Scale Tests<a class="headerlink" href="#performance-and-scale-tests" title="Permanent link">&para;</a></h3>
-<ul>
-<li>High-throughput metric collection</li>
-<li>Resource consumption validation</li>
-<li>Memory leak detection</li>
-<li>Long-running stability tests</li>
-</ul>
-<h3 id="security-and-compliance-tests">Security and Compliance Tests<a class="headerlink" href="#security-and-compliance-tests" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Security configuration validation</li>
-<li>Compliance framework testing</li>
-<li>Permission and access control verification</li>
-<li>Secure communication validation</li>
-</ul>
-<h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
-<h3 id="test-design">Test Design<a class="headerlink" href="#test-design" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Single Responsibility</strong>: Each test should validate one specific workflow</li>
-<li><strong>Clear Assertions</strong>: Use descriptive assertion messages</li>
-<li><strong>Proper Timeouts</strong>: Set appropriate timeouts for operations</li>
-<li><strong>Resource Management</strong>: Always clean up created resources</li>
-</ul>
-<h3 id="performance-considerations">Performance Considerations<a class="headerlink" href="#performance-considerations" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Parallel Execution</strong>: Design tests to run in parallel when possible</li>
-<li><strong>Resource Efficiency</strong>: Reuse infrastructure when appropriate</li>
-<li><strong>Test Duration</strong>: Keep individual tests under 10 minutes when possible</li>
-</ul>
-<h3 id="maintenance">Maintenance<a class="headerlink" href="#maintenance" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Regular Updates</strong>: Keep test environments updated with latest agent versions</li>
-<li><strong>Documentation</strong>: Document test scenarios and expected outcomes</li>
-<li><strong>Monitoring</strong>: Monitor test execution times and failure rates</li>
-<li><strong>Version Compatibility</strong>: Test against supported platform versions</li>
+<li>Stacks, EC2 key pairs and SSH keys are named after <code>$REAL_USER</code> and <code>$WORKSPACE_NAME</code>, not the OS user (which is <code>bits</code> for everyone on a workspace). Two workspaces owned by the same developer therefore get their own key pair and their own stacks, and <code>dda inv aws.destroy-vm</code> only ever sees the stacks created from that workspace.</li>
+<li>Workspaces are headless, so desktop notifications and the "copy to clipboard" prompts are skipped automatically. The connection command or password is printed instead.</li>
 </ul>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../../../guidelines/testing/test-categories/">Test Categories</a> - Understanding different test types</li>
 <li><a href="../unit/">Unit Testing</a> - Running unit tests</li>
+<li><a href="../manual-qa/">Manual QA</a> - Provisioning the same infrastructure for manual inspection</li>
 <li><a href="../../../tutorials/dev/env/">Using Developer Environments</a> - Setting up development environments</li>
-<li><a href="https://github.com/DataDog/datadog-agent/tree/main/test/e2e-framework">test-infra-definitions</a> - Infrastructure provisioning framework</li>
+<li><a href="https://github.com/DataDog/datadog-agent/blob/main/test/new-e2e/codereview_guideline.md">E2E test writing guidelines</a> - The rules a new test is reviewed against</li>
+<li><a href="https://github.com/DataDog/datadog-agent/tree/main/test/e2e-framework">test/e2e-framework</a> - Infrastructure provisioning framework</li>
 </ul>
 
 
@@ -4644,6 +4203,7 @@ By default, the image is names <code>agent</code> unless you override it with th
 
 
                 
+
               </article>
             </div>
           
@@ -4679,13 +4239,13 @@ By default, the image is names <code>agent</code> unless you override it with th
         
         
           
-          <a href="../manual-qa/" class="md-footer__link md-footer__link--next" aria-label="Next: Manual QA Infrastructure">
+          <a href="./running/" class="md-footer__link md-footer__link--next" aria-label="Next: Running tests">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Manual QA Infrastructure
+                Running tests
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -4767,7 +4327,7 @@ By default, the image is names <code>agent</code> unless you override it with th
 </footer>
       
     </div>
-    <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
@@ -4775,10 +4335,16 @@ By default, the image is names <code>agent</code> unless you override it with th
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["content.action.edit","content.code.copy","content.tabs.link","content.tooltips","navigation.expand","navigation.footer","navigation.indexes","navigation.instant","navigation.sections","navigation.tabs","navigation.tabs.sticky"],"search":"../../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["content.action.edit","content.code.copy","content.tabs.link","content.tooltips","navigation.expand","navigation.footer","navigation.indexes","navigation.instant","navigation.sections","navigation.tabs","navigation.tabs.sticky"],"redirect":null,"search":"../../../assets/javascripts/workers/search.c47bb847.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.69c251d7.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a2388154.min.js"></script>
+      
+        <script src="../../../assets/javascripts/navigation-roots.js"></script>
       
     
   </body>
